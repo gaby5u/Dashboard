@@ -1,0 +1,45 @@
+:root {
+  --primaryColor: #cb3cff;
+  --secondaryColor1: #0b1739;
+  --secondaryColor4: #343b4f;
+  --neutralColor800: #081028;
+  --neutralColor700: #0a1330;
+  --neutralColor600: #0b1739;
+  --neutralColor400: #aeb9e1;
+  --neutralColor100: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mona Sans", sans-serif;
+  background-color: #000;
+  color: var(--neutralColor100);
+}
+
+button {
+  cursor: pointer;
+}
+
+/* max-width:1440px; */
+
+.dashboard {
+  margin: 0 auto;
+  max-width: 1440px;
+  background-color: var(--neutralColor800);
+}
+
+.gradient-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  color: var(--neutralColor100);
+  font-size: 1rem;
+  font-weight: 500;
+  background: linear-gradient(to bottom right, var(--primaryColor), #7f25fb);
+  border: none;
+  padding: 14px 12px;
+  width: 100%;
+  border-radius: 4px;
+}
