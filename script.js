@@ -1,5 +1,4 @@
 const menuLinks = document.querySelectorAll(".menu-link");
-const menuUser = document.querySelector(".menu-user-text");
 const menuArrows = document.querySelectorAll(".menu-arrow");
 const subMenus = document.querySelectorAll(".sub-menu-cnt");
 let isActive = false;
@@ -13,9 +12,6 @@ function inactivateAllLinks() {
 
     menuLink.classList.add("inactive-menu-link");
     menuLink.classList.remove("active-menu-link");
-
-    menuUser.classList.add("inactive-menu-user");
-    menuUser.classList.remove("active-menu-user");
 
     menuLinkIcons.forEach((path) => path.setAttribute("fill", "#aeb9e1"));
 
@@ -32,9 +28,6 @@ function inactivateLink(menuLink, index) {
   menuLink.classList.add("inactive-menu-link");
   menuLink.classList.remove("active-menu-link");
 
-  menuUser.classList.add("inactive-menu-user");
-  menuUser.classList.remove("active-menu-user");
-
   menuLinkIcons.forEach((path) => path.setAttribute("fill", "#aeb9e1"));
 
   menuArrows[index].classList.add("inactive-menu-arrow");
@@ -47,9 +40,6 @@ function activateLink(menuLink, index) {
   const menuLinkIcons = menuLink.querySelectorAll(".menu-link-icon > path");
   menuLink.classList.add("active-menu-link");
   menuLink.classList.remove("inactive-menu-link");
-
-  menuUser.classList.add("active-menu-user");
-  menuUser.classList.remove("inactive-menu-user");
 
   menuLinkIcons.forEach((path) => path.setAttribute("fill", "#cb3cff"));
 

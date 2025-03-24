@@ -1,4 +1,4 @@
-@import url("/styles/general.css");
+@import url("/styles/global.css");
 
 .burger-date {
   display: flex;
@@ -6,7 +6,8 @@
   align-items: center;
 }
 
-.burger-menu, .close-menu {
+.burger-menu,
+.close-menu {
   display: none;
 }
 
@@ -126,8 +127,7 @@ aside {
   color: var(--neutralColor400);
 }
 
-.active-menu-link,
-.active-menu-user {
+.active-menu-link {
   color: var(--primaryColor);
 }
 
@@ -211,13 +211,6 @@ aside {
 
 .menu-user-text p {
   font-size: 0.75rem;
-}
-
-.inactive-menu-user {
-  & p {
-    color: var(--neutralColor400);
-  }
-  color: var(--neutralColor100);
 }
 
 .menu-user-cnt div p {
