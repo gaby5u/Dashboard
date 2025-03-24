@@ -82,6 +82,15 @@
   font-weight: 600;
 }
 
+.violet-bg-calendar {
+  background-color: var(--primaryColor);
+  color: var(--neutralColor100);
+  border-radius: 4px;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+}
+
 .product-stat {
   min-width: 13.3rem;
   background-color: var(--secondaryColor1);
@@ -284,9 +293,18 @@
   margin: 0;
 }
 
-/* .order-status-calendar {
+.dark-bg-calendar {
+  background-color: var(--neutralColor700);
+  border: 0.6px solid var(--neutralColor600);
+  padding: 9px;
+  border-radius: 4px;
+  font-size: 0.6rem;
+  color: var(--neutralColor400);
+}
 
-} */
+input[type="date"]:focus-visible {
+  outline: none;
+}
 
 .buttons-cnt {
   display: flex;
