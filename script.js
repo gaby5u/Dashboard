@@ -89,3 +89,15 @@ subMenus.forEach((subMenu) => {
     });
   });
 });
+
+const burgerMenu = document.querySelector(".burger-menu");
+const aside = document.querySelector("aside");
+const closeMenu = document.querySelector(".close-menu");
+
+burgerMenu.addEventListener("click", () => {
+  aside.classList.add("opened-sidebar");
+});
+
+closeMenu.addEventListener("click", () => {
+  aside.classList.remove("opened-sidebar");
+});

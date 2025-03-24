@@ -1,0 +1,24 @@
+{
+  "name": "dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "vite",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gaby5u/Dashboard.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gaby5u/Dashboard/issues"
+  },
+  "homepage": "https://github.com/gaby5u/Dashboard#readme",
+  "dependencies": {
+    "apexcharts": "^4.5.0",
+    "vite": "^6.2.2"
+  }
+}

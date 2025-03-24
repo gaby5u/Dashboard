@@ -1,8 +1,34 @@
 @import url("/styles/general.css");
 
+.burger-date {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.burger-menu, .close-menu {
+  display: none;
+}
+
+.close-menu {
+  margin-left: 10px;
+}
+
+.opened-sidebar {
+  display: block;
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 100;
+  max-width: 320px;
+  background-color: var(--neutralColor800);
+}
+
 aside {
+  display: block;
+  width: 100%;
   max-width: 300px;
-  /* padding: 2.5rem 1.75rem; */
   border-right: 0.6px solid var(--neutralColor600);
   box-shadow: 0 0 28px 0 #0105114d;
 }
@@ -39,7 +65,8 @@ aside {
 }
 
 .arrows svg,
-.menu-link {
+.menu-link,
+.burger-menu {
   cursor: pointer;
 }
 
@@ -87,6 +114,9 @@ aside {
   width: 100%;
   justify-content: space-between;
   margin-bottom: 6px;
+}
+
+.menu-link h2 {
   font-size: 0.8rem;
   line-height: 14px;
   font-weight: 500;
@@ -126,6 +156,7 @@ aside {
   padding: 14px;
   width: 90%;
   border-radius: 4px;
+  font-size: 0.8rem;
 }
 
 .active-sub-menu-link::before {
@@ -160,7 +191,7 @@ aside {
 }
 
 .menu-user-cnt {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .menu-user-text {
@@ -173,8 +204,13 @@ aside {
 .menu-user-text p {
   text-align: start;
   width: 100%;
+  font-size: 0.8rem;
   font-weight: 500;
   margin: 0;
+}
+
+.menu-user-text p {
+  font-size: 0.75rem;
 }
 
 .inactive-menu-user {

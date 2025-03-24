@@ -1,0 +1,13 @@
+/* radial-chart */
+
+.apexcharts-legend-text {
+  margin-left: 0 !important;
+  padding-left: 5px !important;
+}
+
+.radialChart, #semiCircleChart {
+  display: flex;
+  justify-content: center;
+}
+
+/* semi-cirlce-chart */

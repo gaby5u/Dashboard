@@ -5,8 +5,13 @@
   --neutralColor800: #081028;
   --neutralColor700: #0a1330;
   --neutralColor600: #0b1739;
+  --neutralColor500: #7e89ac;
   --neutralColor400: #aeb9e1;
   --neutralColor100: #fff;
+}
+
+body, html {
+  overflow-x: hidden;
 }
 
 body {
@@ -21,11 +26,10 @@ button {
   cursor: pointer;
 }
 
-/* max-width:1440px; */
-
 .dashboard {
   margin: 0 auto;
-  max-width: 1440px;
+  width: 100%;
+  display: flex;
   background-color: var(--neutralColor800);
 }
 
