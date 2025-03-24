@@ -154,6 +154,27 @@
   padding: 2rem 1.75rem;
 }
 
+.revenue-chart-cnt,
+.website-visitors-cnt {
+  min-height: 300px;
+}
+
+.revenue-chart-cnt h2 {
+  font-size: 0.8rem;
+  font-weight: 500;
+  margin: 0;
+  margin-bottom: 0.6rem;
+  color: var(--neutralColor400);
+}
+
+.revenue-chart-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
 .products-cnt,
 .team-progress-cnt,
 .semi-circle-chart {
@@ -269,6 +290,8 @@
 
 .buttons-cnt {
   display: flex;
+  justify-content: end;
+  flex-wrap: wrap;
   gap: 0.75rem;
 }
 

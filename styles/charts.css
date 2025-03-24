@@ -1,13 +1,34 @@
-/* radial-chart */
-
-.apexcharts-legend-text {
+#radialChart .apexcharts-legend-text,
+#revenue-chart-cnt .apexcharts-legend-text,
+#semiCircleChart .apexcharts-legend-text {
   margin-left: 0 !important;
-  padding-left: 5px !important;
+  padding: 10px 5px !important;
+  padding-right: 0 !important;
 }
 
-.radialChart, #semiCircleChart {
-  display: flex;
+#semiCircleChart, #radialChart {
+  height: 150px !important;
+  min-height: 0 !important;
+}
+
+#radialChart .apexcharts-legend {
+  max-width: 100px;
+  justify-content: start;
+}
+
+#radialChart .apexcharts-legend {
+  max-width: 100%;
   justify-content: center;
 }
 
-/* semi-cirlce-chart */
+@media screen and (max-width: 926px) {
+  #revenue-chart-cnt .apexcharts-legend {
+    top: 0 !important;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #revenue-chart-cnt .apexcharts-legend {
+    left: 0 !important;
+  }
+}

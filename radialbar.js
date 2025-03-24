@@ -3,10 +3,8 @@ import ApexCharts from "apexcharts";
 var options = {
   series: [50, 30, 20],
   chart: {
-    height: 209,
-    width: 400,
+    height: 300,
     type: "radialBar",
-    
   },
   plotOptions: {
     radialBar: {
@@ -25,7 +23,7 @@ var options = {
           show: true,
           label: "",
           formatter: function (w) {
-            return 249;
+            return "150k";
           },
         },
       },
@@ -35,12 +33,17 @@ var options = {
   legend: {
     show: true,
     position: "bottom",
-    verticalAlign: "center",
+    horizontalAlign: "start",
+    fontSize: "14px",
+    offsetY: -35,
+    markers: {
+      size: 3,
+      strokeWidth: 0,
+    },
+    labels: {
+      colors: "#AEB9E1",
+    },
   },
-  // markers: {
-  //   size: 2,
-  //   strokeWidth: 0,
-  // },
   tooltip: {
     enabled: true,
     theme: "dark",
